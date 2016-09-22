@@ -1,10 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
+    <%= link_to "DUOS Project", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Publications", publications_path %></li>
+        <li><%= link_to "Contact Us", contact_path %></li>
+        <!-- Log-In will be implemented later
         <% if logged_in? %>
           <li><%= link_to "Users", '#' %></li>
           <li class="dropdown">
@@ -22,7 +25,8 @@
           </li>
         <% else %>
           <li><%= link_to "Log in", login_path %></li>
-        <% end %>
+        <% end %> 
+        -->
       </ul>
     </nav>
   </div>

@@ -2,16 +2,19 @@ Rails.application.routes.draw do
   get 'sessions/new'
 
   get 'users/new'
-
+  
   get 'users/new'
+
 
   root               'static_pages#home'
 
-  get 'help'      => 'static_pages#help'
+   get 'publications'      => 'static_pages#publications'
   
   get 'about'     => 'static_pages#about'
   
   get 'contact'   => 'static_pages#contact'
+   
+  get 'people'  => 'static_pages#people'
   
   get 'signup'    => 'users#new'
   
